@@ -50,11 +50,6 @@ def scrape_job(job_url):
     post_time_element = soup.select_one(".posted-time-ago__text")
     post_time = post_time_element.get_text().strip()
 
-    # salary_element = soup.select_one(".salary")
-    # if salary_element is not None:
-    #   salary = salary_element.get_text().strip()
-    # else:
-    #    salary = None
 
     description_element = soup.select_one(".description__text .show-more-less-html")
     description = description_element.get_text().strip()
